@@ -33,7 +33,7 @@ namespace BulletSystemEditor {
 				currentIndex--;
 				//currentIndex = index;
 				label.text = itemList[currentIndex];
-				Debug.Log(label.text);
+				//Debug.Log(label.text);
 			}
 		}
 
@@ -44,7 +44,7 @@ namespace BulletSystemEditor {
 				currentIndex++;
 				//currentIndex = index;
 				label.text = itemList[currentIndex];
-				Debug.Log(label.text);
+				//Debug.Log(label.text);
 			}
 		}
 	}
