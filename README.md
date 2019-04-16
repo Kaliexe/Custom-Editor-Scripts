@@ -31,7 +31,7 @@ To use, simply download the repo or zip, unzip and drag everything but the scree
   
   -UI/Horizontal Two Button List
   
-    -creates a horizontal two button list in a canvas.  Will create a new canvas if there is none in hierarchy
+    - creates a horizontal two button list in a canvas.  Will create a new canvas if there is none in hierarchy
   
   ![Screenshot](Screenshots/UIHL0.png)
   
