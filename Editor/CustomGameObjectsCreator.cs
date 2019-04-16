@@ -4,7 +4,7 @@ using UnityEngine;
 
 using UnityEditor;
 
-namespace BulletSystemEditor {
+namespace CustomEditorScripts {
 
 
 	public class CustomGameObjectsCreator {
