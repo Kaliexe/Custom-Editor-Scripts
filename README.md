@@ -27,9 +27,10 @@ To use, simply download the repo or zip, unzip and drag everything but the scree
 //-------------------------------------------------------------------------------------------------------------------
 
 ## 1. Custom Game Objects
-  - Ver 0.1
+  - Ver 0.2
   
   -UI/Horizontal Two Button List
+    -creates a horizontal two button list in a canvas.  Will create a new canvas if there is none in hierarchy
   
   ![Screenshot](Screenshots/UIHL0.png)
   
