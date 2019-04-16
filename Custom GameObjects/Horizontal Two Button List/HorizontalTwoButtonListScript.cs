@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 //https://www.youtube.com/watch?v=gZUSz4Mjpeo
-namespace BulletSystemEditor {
+namespace CustomGameObjects {
 
 	[System.Serializable]
 	public class HorizontalTwoButtonListScript : MonoBehaviour {
