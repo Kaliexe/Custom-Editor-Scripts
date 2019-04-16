@@ -8,7 +8,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine.UI;
 
 //https://docs.unity3d.com/ScriptReference/EditorWindow.OnGUI.html
-namespace BulletSystemEditor {
+namespace CustomEditorScripts {
 
 	public class GameObjectMassTransformerEditor : EditorWindow {
 		
