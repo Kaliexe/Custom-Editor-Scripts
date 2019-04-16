@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.UI;
 using UnityEditor;
 
 namespace CustomEditorScripts {
@@ -21,6 +22,30 @@ namespace CustomEditorScripts {
 			GameObjectUtility.SetParentAndAlign(go, menuCommand.context as GameObject);
 			// Register the creation in the undo system
 			Undo.RegisterCreatedObjectUndo(go, "Create " + go.name);
+
+			//find canvas
+			Canvas canvas = (Canvas)Object.FindObjectOfType(typeof(Canvas));
+
+			//if no canvas, make a new one and parent to gameobject
+			if (canvas == null) {
+
+				// default Canvas
+				GameObject canvasGO = new GameObject();
+				canvasGO.name = "Canvas";
+				canvasGO.AddComponent<Canvas>();
+
+				Canvas canvasComponent = canvasGO.GetComponent<Canvas>();
+				canvasComponent.renderMode = RenderMode.ScreenSpaceOverlay;
+				canvasGO.AddComponent<CanvasScaler>();
+				canvasGO.AddComponent<GraphicRaycaster>();
+
+				go.transform.SetParent(canvasGO.transform, false);
+
+			} else {
+
+				go.transform.SetParent(canvas.transform, false);
+			}
+
 			Selection.activeObject = go;
 		}
 	}
