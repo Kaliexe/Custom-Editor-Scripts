@@ -11,6 +11,7 @@ namespace CustomEditorScripts {
 	public class CustomGameObjectsCreator {
 
 
+
 		[MenuItem("GameObject/UI/Horizontal Two Button List", false, 10)]
 		static void CreateCustomGameObject(MenuCommand menuCommand) {
 
@@ -25,7 +26,9 @@ namespace CustomEditorScripts {
 			// Register the creation in the undo system
 			Undo.RegisterCreatedObjectUndo(go, "Create " + go.name);
 
+			Selection.activeGameObject = menuCommand.context as GameObject;
 
+			#region Code
 			//if there is a selected object
 			if (Selection.activeGameObject != null) {
 
@@ -97,8 +100,10 @@ namespace CustomEditorScripts {
 
 			}
 
+			//selectionIndex++;
 
-
+			//Selection.activeGameObject = null;
+			#endregion
 		}
 
 		public static GameObject CreateAndGetNewCanvas() {
